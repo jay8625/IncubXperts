@@ -1,0 +1,10 @@
+D:\Web Development\.net core\Solution1\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+D:\Web Development\.net core\Solution1\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\Web Development\.net core\Solution1\Calculator\bin\Debug\Calculator.exe.config
+D:\Web Development\.net core\Solution1\Calculator\bin\Debug\Calculator.exe
+D:\Web Development\.net core\Solution1\Calculator\bin\Debug\Calculator.pdb
+D:\Web Development\.net core\Solution1\Calculator\bin\Debug\Calfunctions.dll
+D:\Web Development\.net core\Solution1\Calculator\bin\Debug\Calfunctions.pdb
+D:\Web Development\.net core\Solution1\Calculator\obj\Debug\Calculator.csproj.CopyComplete
+D:\Web Development\.net core\Solution1\Calculator\obj\Debug\Calculator.exe
+D:\Web Development\.net core\Solution1\Calculator\obj\Debug\Calculator.pdb

@@ -1,0 +1,6 @@
+D:\Web Development\.net core\Solution1\Calfunctions\bin\Debug\Calfunctions.dll
+D:\Web Development\.net core\Solution1\Calfunctions\bin\Debug\Calfunctions.pdb
+D:\Web Development\.net core\Solution1\Calfunctions\obj\Debug\Calfunctions.csproj.AssemblyReference.cache
+D:\Web Development\.net core\Solution1\Calfunctions\obj\Debug\Calfunctions.csproj.CoreCompileInputs.cache
+D:\Web Development\.net core\Solution1\Calfunctions\obj\Debug\Calfunctions.dll
+D:\Web Development\.net core\Solution1\Calfunctions\obj\Debug\Calfunctions.pdb

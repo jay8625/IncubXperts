@@ -42,6 +42,9 @@ namespace Inheritance_Assignment
     {
         static void Main(string[] args)
         {
+            //Iphone i = new Phone();    (can't happen because class Iphone is not having fully access to class phone)
+            //Phone i = new Phone();     (both can be done)
+            //Phone i = new Iphone();
             Iphone ios = new Iphone
             {
                 model = "13 Pro max",

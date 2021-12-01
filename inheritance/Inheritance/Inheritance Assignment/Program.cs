@@ -19,21 +19,41 @@ namespace Inheritance_Assignment
             Console.WriteLine("Prize :" + prize);
             Console.WriteLine("Processor :" + processor);
             Console.WriteLine("Ram :" + ram);
-            Console.WriteLine("Os :" + os);
+
         }
         public string OperatingSystem()
         {
-            os = "ios";
+            os = "os: ios";
             return os;
         }
 
 }
-    class Iphone : Phone
+    public class Iphone : Phone
     {
-        string modelSize = "20x8cm";
+        public string modelSize = "20x8cm";
         public void PrintSize()
         {
             Console.WriteLine("Model Size is :"+ modelSize);
+        }
+    }
+
+    class Android : Phone
+    {
+        private string oS="Android";
+        public void PrintOs()
+        {
+            Console.WriteLine("Operating system is :" + oS);
+        }
+        
+        
+    }
+
+    class Window :Phone
+    {
+        private string oS="Windows";
+        public void PrintOs()
+        {
+            Console.WriteLine("Operating System is :" + oS);
         }
     }
 
@@ -42,6 +62,8 @@ namespace Inheritance_Assignment
     {
         static void Main(string[] args)
         {
+
+
             //Iphone i = new Phone();    (can't happen because class Iphone is not having fully access to class phone)
             //Phone i = new Phone();     (both can be done)
             //Phone i = new Iphone();
@@ -51,10 +73,36 @@ namespace Inheritance_Assignment
                 processor = "A13",
                 ram = "6gb"
             };
-            ios.OperatingSystem();
-            ios.prize = 120000;
+            Console.WriteLine("This Description is for Iphone:-");
+            ios.prize = 120000; 
             ios.PhoneInfo();
+            ios.OperatingSystem();
             ios.PrintSize();
+            Console.ReadLine();
+
+            Android and = new Android
+            {
+                model = "One Plus",
+                processor = "Sd888",
+                ram = "12gb"
+            }; 
+            Console.WriteLine("This Description is for Android:-");
+            and.prize = 120000;
+            and.PrintOs();
+            and.PhoneInfo();
+            Console.ReadLine();
+
+            Window Win = new Window
+            {
+                model = "Nokia",
+                processor = "Mediatech",
+                ram = "4gb"
+            }; 
+            Console.WriteLine("This Description is for Windows:-");
+            Win.PrintOs();
+            Win.prize = 120000;
+            Win.PhoneInfo();
+            Console.ReadLine();
         }
     }
 }

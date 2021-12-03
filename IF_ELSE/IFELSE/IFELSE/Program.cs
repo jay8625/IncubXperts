@@ -23,7 +23,7 @@ namespace IFELSE
             int maths = 78;
             int science = 56;
             int english = 89;
-            int average = maths + science + english / 3;
+            int average = (maths + science + english)/ 3;
             x[1]=average1 = average;
             if (average>=80)
             {
@@ -34,11 +34,11 @@ namespace IFELSE
 
         public void Std2()
         {
-            string name = "priya";
+            string name = "priyanka";
             int maths = 15;
             int science = 36;
-            int english = 39;
-            int average = maths + science + english / 3;
+            int english = 49;
+            int average = (maths + science + english) / 3;
             x[2]=average2 = average;
             if (average >= 80)
             {
@@ -53,7 +53,7 @@ namespace IFELSE
             int maths = 88;
             int science = 76;
             int english = 69;
-            int average = maths + science + english / 3;
+            int average = (maths + science + english) / 3;
             x[3] = average3 = average;
             if (average >= 80)
             {
@@ -68,7 +68,7 @@ namespace IFELSE
             int maths = 28;
             int science = 36;
             int english = 23;
-            int average = maths + science + english / 3;
+            int average = (maths + science + english) / 3;
             x[4] = average4 = average;
             if (average >= 80)
             {
@@ -82,8 +82,8 @@ namespace IFELSE
             string name = "Ajay";
             int maths = 48;
             int science = 26;
-            int english = 39;
-            int average = maths + science + english / 3;
+            int english = 35;
+            int average = (maths + science + english) / 3;
             x[5] = average5 = average;
             if (average >= 80)
             {
@@ -98,7 +98,7 @@ namespace IFELSE
             int maths = 45;
             int science = 96;
             int english = 21;
-            int average = maths + science + english / 3;
+            int average = (maths + science + english) / 3;
             x[6] = average6 = average;
             if (average >= 80)
             {
@@ -113,7 +113,7 @@ namespace IFELSE
             int maths = 65;
             int science = 46;
             int english = 91;
-            int average = maths + science + english / 3;
+            int average = (maths + science + english) / 3;
             x[7] = average7 = average;
             if (average >= 80)
             {
@@ -127,8 +127,8 @@ namespace IFELSE
             string name = "Mihir";
             int maths = 64;
             int science = 36;
-            int english = 11;
-            int average = maths + science + english / 3;
+            int english = 61;
+            int average = (maths + science + english) / 3;
             x[8] = average8 = average;
             if (average >= 80)
             {
@@ -141,8 +141,8 @@ namespace IFELSE
             string name = "Priya";
             int maths = 12;
             int science = 36;
-            int english = 21;
-            int average = maths + science + english / 3;
+            int english = 31;
+            int average = (maths + science + english) / 3;
             x[9] = average9 = average;
             if (average >= 80)
             {
@@ -156,8 +156,8 @@ namespace IFELSE
             string name = "Rohan";
             int maths = 55;
             int science = 36;
-            int english = 21;
-            int average = maths + science + english / 3;
+            int english = 22;
+            int average = (maths + science + english) / 3;
             x[10] = average10 = average;
             if (average >= 80)
             {
@@ -169,7 +169,7 @@ namespace IFELSE
 
         public void Assending()
         {
-            Array.Reverse(x);
+            Array.Sort(x);
             foreach (int ivalue in x )
             {
               

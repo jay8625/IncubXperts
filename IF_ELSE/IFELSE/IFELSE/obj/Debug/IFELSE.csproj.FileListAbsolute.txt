@@ -1,0 +1,7 @@
+D:\New folder\IF_ELSE\IFELSE\IFELSE\bin\Debug\IFELSE.exe.config
+D:\New folder\IF_ELSE\IFELSE\IFELSE\bin\Debug\IFELSE.exe
+D:\New folder\IF_ELSE\IFELSE\IFELSE\bin\Debug\IFELSE.pdb
+D:\New folder\IF_ELSE\IFELSE\IFELSE\obj\Debug\IFELSE.csproj.AssemblyReference.cache
+D:\New folder\IF_ELSE\IFELSE\IFELSE\obj\Debug\IFELSE.csproj.CoreCompileInputs.cache
+D:\New folder\IF_ELSE\IFELSE\IFELSE\obj\Debug\IFELSE.exe
+D:\New folder\IF_ELSE\IFELSE\IFELSE\obj\Debug\IFELSE.pdb

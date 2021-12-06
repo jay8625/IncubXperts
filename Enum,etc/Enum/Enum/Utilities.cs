@@ -27,7 +27,7 @@ namespace Enum
         {
         }
 
-        public Practice(Practice A)
+        public Practice(Practice A)     //Copy Constructor
         {
 
         }

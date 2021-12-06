@@ -26,6 +26,8 @@ namespace Enum
 
 
             Console.ReadLine();
+
+            //all the methods have been called in ExtendMain class as I have made it a Extension class
   
         }
     }

@@ -1,26 +1,12 @@
 ﻿using System;
-using System.Threading;
-using System.Configuration;
-using System.Linq;
 using System.IO;
-using System.Collections.Generic;
+using System.Threading;
+
 
 namespace Thread_And_Files
 {
     class Program
     {
-
-        
-
-        public static void LogWriter(string message)
-        {
-            var logpath = ConfigurationManager.AppSettings["logpath"];
-
-            using (StreamWriter write = new StreamWriter(logpath, true))
-            {
-                write.WriteLine((DateTime.Now) + message);
-            }
-        }
         public static void Palindrome()     //Palindrome no from 100 to 10000
         {
             for (int i = 100; i < 10000; i++)
@@ -34,7 +20,7 @@ namespace Thread_And_Files
                     sum = (sum * 10) + rem;
                     num /= 10;
                 }
-                if (sum==temp)
+                if (sum == temp)
                 {
                     var output = "palindrome: " + temp;
                     Console.WriteLine(output);
@@ -46,71 +32,89 @@ namespace Thread_And_Files
         {
             for (int i = 1; i <= 1000; i++)
             {
-                if (i%2==0)
+                if (i % 2 == 0)
                 {
-                    Console.WriteLine("Even: "+i);
+                    Console.WriteLine("Even: " + i);
                 }
             }
         }
         static void Main(string[] args)
         {
-            LogWriter(" hello world");
 
-            string path = @"D:\log.txt";
-            List<string> lines = File.ReadAllLines(path).ToList();
-            
+            FileStream logger;
+            StreamWriter write;
+            TextWriter WriteOut = Console.Out;
+            try
+            {
+                logger = new FileStream("./Log.txt", FileMode.OpenOrCreate, FileAccess.Write);
+                write = new StreamWriter(logger);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Cannot open Log.txt for writing");
+                Console.WriteLine(e.Message);
+                return;
+            }
+            Console.SetOut(write);
 
             Console.WriteLine("Enter the Threading Type:-");
             Console.WriteLine();
             Console.WriteLine("1.Without Threading");
             Console.WriteLine("2.Single Threading");
             Console.WriteLine("3.Multi Threading");
-            int input =Convert.ToInt32(Console.ReadLine());
-                switch (input)
-                {
-                    case 1:
-                        {
-                            LogWriter("########## Normal Type:- ###########");
-                            Console.WriteLine("########## Normal Type:- ###########");
-                            Palindrome();
-                            Even();
-                            Console.ReadLine();
+            int input = Convert.ToInt32(Console.ReadLine());
+            switch (input)                                          //Switchcase for Thread Condition
+            {
+                case 1:
+                    {
+                        Console.WriteLine("########## Normal Type:- ###########");      //Without threading
+                        Palindrome();
+                        Even();
+                        Console.ReadLine();
 
 
-                        }
-                        break;
-                    case 2:
-                        {
-                            Console.WriteLine("########## Single Thread:- ##########");
-                            Thread Thread_1 = new Thread(Palindrome);   //Thread Declared for Both Even & Plaindrome 
-                            Thread_1.Start();
-                            Thread.Sleep(3000);     //Thread sleep timming
-                            Even();
-                            Console.ReadLine();
-                        }
-                        break;
+                    }
+                    break;
+                case 2:
+                    {
+                        Console.WriteLine("########## Single Thread:- ##########");
+                        Thread Thread_1 = new Thread(Palindrome);                            //Single Threading 
+                        Thread_1.Start();
+                        Thread.Sleep(3000);     //Thread sleep timming ()
+                        Even();
+                        Console.ReadLine();
+                    }
+                    break;
 
-                    case 3:
-                        {
-                            Console.WriteLine("########## Multi Thread:- ##########");
-                            Thread Thread_1 = new Thread(Palindrome);
-                            Thread Thread_2 = new Thread(Even);
-                            Thread_1.Start();
-                            Thread_2.Start();
-                            Thread.Sleep(3000);
-                            Thread.Sleep(3000);
-                            Console.ReadLine();
-                        }
-                        break;
+                case 3:
+                    {
+                        Console.WriteLine("########## Multi Thread:- ##########");      //Thread Declared for Both Even & Plaindrome 
+                        Thread Thread_1 = new Thread(Palindrome);
+                        Thread Thread_2 = new Thread(Even);
+                        Thread_1.Start();
+                        Thread_2.Start();
+                        Thread.Sleep(3000);             //Thread sleep 
+                        Thread.Sleep(3000);
+                        Console.ReadLine();
+                    }
+                    break;
 
 
-                    default:
+                default:
 
-                        Console.WriteLine("Looking forward to the Weekend.");
-                        break;
-                
-                }
+                    Console.WriteLine("Looking forward to the Weekend.");
+                    break;
+
             }
-        }
-    }
 
+
+            Console.SetOut(WriteOut);
+            write.Close();
+            logger.Close();
+            Console.ReadLine();
+
+        }
+
+
+    }
+}

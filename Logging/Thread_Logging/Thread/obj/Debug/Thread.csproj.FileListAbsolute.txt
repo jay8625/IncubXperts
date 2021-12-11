@@ -1,0 +1,10 @@
+D:\New folder\Logging\Thread_Logging\Thread\bin\Debug\Thread.exe.config
+D:\New folder\Logging\Thread_Logging\Thread\bin\Debug\Thread.exe
+D:\New folder\Logging\Thread_Logging\Thread\bin\Debug\Thread.pdb
+D:\New folder\Logging\Thread_Logging\Thread\bin\Debug\log4net.dll
+D:\New folder\Logging\Thread_Logging\Thread\bin\Debug\log4net.xml
+D:\New folder\Logging\Thread_Logging\Thread\obj\Debug\Thread.csproj.AssemblyReference.cache
+D:\New folder\Logging\Thread_Logging\Thread\obj\Debug\Thread.csproj.CoreCompileInputs.cache
+D:\New folder\Logging\Thread_Logging\Thread\obj\Debug\Thread.csproj.CopyComplete
+D:\New folder\Logging\Thread_Logging\Thread\obj\Debug\Thread.exe
+D:\New folder\Logging\Thread_Logging\Thread\obj\Debug\Thread.pdb

@@ -1,0 +1,17 @@
+D:\New folder\Thread and files\Thread and Files\Thread And Files\bin\Debug\Thread And Files.exe.config
+D:\New folder\Thread and files\Thread and Files\Thread And Files\bin\Debug\Thread And Files.exe
+D:\New folder\Thread and files\Thread and Files\Thread And Files\bin\Debug\Thread And Files.pdb
+D:\New folder\Thread and files\Thread and Files\Thread And Files\obj\Debug\Thread And Files.csproj.AssemblyReference.cache
+D:\New folder\Thread and files\Thread and Files\Thread And Files\obj\Debug\Thread And Files.csproj.CoreCompileInputs.cache
+D:\New folder\Thread and files\Thread and Files\Thread And Files\obj\Debug\Thread And Files.exe
+D:\New folder\Thread and files\Thread and Files\Thread And Files\obj\Debug\Thread And Files.pdb
+D:\New folder\Thread and files\Thread and Files\Thread And Files\bin\Debug\Serilog.dll
+D:\New folder\Thread and files\Thread and Files\Thread And Files\bin\Debug\Serilog.Sinks.Console.dll
+D:\New folder\Thread and files\Thread and Files\Thread And Files\bin\Debug\Serilog.Sinks.File.dll
+D:\New folder\Thread and files\Thread and Files\Thread And Files\bin\Debug\Serilog.xml
+D:\New folder\Thread and files\Thread and Files\Thread And Files\bin\Debug\Serilog.Sinks.Console.xml
+D:\New folder\Thread and files\Thread and Files\Thread And Files\bin\Debug\Serilog.Sinks.File.pdb
+D:\New folder\Thread and files\Thread and Files\Thread And Files\bin\Debug\Serilog.Sinks.File.xml
+D:\New folder\Thread and files\Thread and Files\Thread And Files\obj\Debug\Thread And Files.csproj.CopyComplete
+D:\New folder\Thread and files\Thread and Files\Thread And Files\bin\Debug\NLog.dll
+D:\New folder\Thread and files\Thread and Files\Thread And Files\bin\Debug\NLog.xml
